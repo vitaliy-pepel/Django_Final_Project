@@ -1,0 +1,47 @@
+<!-- clients_products_orders/templates/clients_products_orders/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Клиенты, товары и заказы</title>
+</head>
+<body>
+    <h1>Клиенты, товары и заказы</h1>
+
+    <!-- Форма для создания клиента -->
+    <h2>Добавить клиента</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ client_form.as_p }}
+        <button type="submit">Создать</button>
+    </form>
+
+    <!-- Форма для создания товара -->
+    <h2>Добавить товар</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ product_form.as_p }}
+        <button type="submit">Создать</button>
+    </form>
+
+    <!-- Форма для создания заказа -->
+    <h2>Добавить заказ</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ order_form.as_p }}
+        <button type="submit">Создать</button>
+    </form>
+
+    <!-- Форма для создания позиции заказа -->
+    <h2>Добавить позицию заказа</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ order_item_form.as_p }}
+        <button type="submit">Создать</button>
+    </form>
+
+    <!-- Вывод информации о заказах клиентов -->
+    <!-- ... -->
+</body>
+</html>

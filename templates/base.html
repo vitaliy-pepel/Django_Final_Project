@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мои проекты</title>
+    <style>
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #C8D2D1;
+      padding: 1px;
+      text-align: center;
+    }
+    nav {
+      background-color: #EE9B01;
+      padding: 10px;
+      display: flex;
+      justify-content: space-around;
+    }
+    nav a {
+      color: #343a40;
+      text-decoration: none;
+      padding: 5px;
+    }
+    nav a:hover {
+      background-color: #68904D;
+      color: white;
+    }
+    main {
+      padding: 40px;
+    }
+    footer {
+      background-color: #C8D2D1;
+      text-align: center;
+      bottom: 0;
+      width: 100%;
+      height: 60px;
+    }
+
+
+
+    </style>
+
+</head>
+<body>
+<header>
+    <h1>Мои проекты</h1>
+    <hr/>
+</header>
+
+<main>
+    <section id="about">
+        <hr/>
+        <h2>Обо мне</h2>
+        <hr/>
+        <h2><strong>Виталий Евгеньевич Чебыкин</strong> - учитель информатики и технологии.</h2>
+        <p>Сфера профессиональных интересов:</p>
+        <ul>
+            <li>Педагогика;</li>
+            <li>Теория информации;</li>
+            <li>Информационное моделирование;</li>
+            <li>Информационно-коммуникационные технологии;</li>
+            <li>Программирование;</li>
+            <li>Инженерная графика и прототипирование;</li>
+            <li>Аддитивные технологии;</li>
+            <li>Робототехника и схематехника;</li>
+        </ul>
+        <hr/>
+    </section>
+    <section id="projects">
+        <h2>Мои проекты</h2>
+        <hr/>
+
+        <ul>
+            <li><a href="{% url 'game:index' %}">Игра</a></li>
+            <li><a href="{% url 'articles:index' %}">Статьи</a></li>
+            <li><a href="{% url 'clients_products_orders:index' %}">Клиенты продукты заказы</a> - (Извините, проект
+                дорабатывается. Столкнулся с рядом проблем, которые будут решены в ближайшее время. Но Вы можете
+                ознакомиться с наработками в директории [clients_products_orders])
+            </li>
+        </ul>
+        <hr/>
+        <h2>Структура</h2>
+        <hr/>
+        <code>
+            my_projects/<br/>
+            &nbsp;&nbsp;&nbsp; ├── game/<br/>
+            &nbsp;&nbsp;&nbsp; ├── articles/<br/>
+            &nbsp;&nbsp;&nbsp; ├── clients_products_orders/<br/>
+            &nbsp;&nbsp;&nbsp; ├── templates/<br/>
+            &nbsp;&nbsp;&nbsp; │ └── base.html<br/>
+            &nbsp;&nbsp;&nbsp; ├── my_projects/<br/>
+            &nbsp;&nbsp;&nbsp; ├── manage.py<br/>
+            &nbsp;&nbsp;&nbsp; └── ...<br/>
+
+        </code>
+    </section>
+</main>
+
+<footer>
+    <hr/>
+    <p>||Виталичка Евгеньевич @ 2024||</p>
+</footer>
+</body>
+</html>
