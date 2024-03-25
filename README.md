@@ -7,6 +7,6 @@
              ├── templates/
              │ └── base.html
              ├── my_projects/
-             ├── manage.py<
+             ├── manage.py
              └── ...
 ```
